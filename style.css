@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(to bottom, #ffe082, #ffca28);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Segoe UI", sans-serif;
+}
+
+/* Card */
+.festival-card {
+    background: #fffde7;
+    padding: 35px;
+    width: 360px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+}
+
+/* Title */
+h1 {
+    color: #bf360c;
+    margin-bottom: 20px;
+}
+
+/* Pongal Pot */
+.pongal-pot {
+    margin: 20px auto;
+    width: 140px;
+    position: relative;
+    cursor: pointer;
+}
+
+.rice {
+    font-size: 24px;
+    animation: steam 2s infinite;
+}
+
+@keyframes steam {
+    0% { opacity: 0; transform: translateY(0); }
+    50% { opacity: 1; }
+    100% { opacity: 0; transform: translateY(-20px); }
+}
+
+.pot-body {
+    height: 80px;
+    background: linear-gradient(#d84315, #bf360c);
+    border-radius: 0 0 40px 40px;
+}
+
+.pot-base {
+    height: 12px;
+    width: 80px;
+    background: #5d4037;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+/* Sugarcane */
+.sugarcane {
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+/* Wish text */
+.wish {
+    color: #4e342e;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* Hover Blessing */
+.blessing {
+    margin: 25px auto;
+    padding: 12px;
+    width: 220px;
+    background: #8bc34a;
+    color: #1b5e20;
+    border-radius: 12px;
+    font-weight: bold;
+    position: relative;
+}
+
+.blessing span {
+    display: block;
+    margin-top: 8px;
+    opacity: 0;
+    color: #ffffff;
+    transition: opacity 0.4s;
+}
+
+.blessing:hover span {
+    opacity: 1;
+}
+
+/* Footer */
+.from {
+    margin-top: 20px;
+    font-style: italic;
+    color: #6d4c41;
+}
